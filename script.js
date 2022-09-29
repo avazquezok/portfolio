@@ -1,8 +1,7 @@
-let button = document.getElementById("links");
-button.addEventListener("click", function(e) {  
-    if (button.style.display === "block") {
-      button.style.display = "none";
-    } else {
-      button.style.display = "block";
-    }
-  })
+function hamburger() {
+  let menubar = document.getElementById("myLinks");
+if (menubar.style.display === "block") {
+  menubar.style.display = "none";
+} else {
+  menubar.style.display = "block";
+}}
