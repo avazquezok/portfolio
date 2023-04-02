@@ -1,57 +1,84 @@
+*{
+  color: #fff;
+}
+/* Add padding to the section */
+.about-me {
+  padding: 50px 0;
+}
+
+/* Make the image responsive */
+.about-me img {
+  max-width: 100%;
+  height: auto;
+}
 body {
-    background-color: black;
-    color: bisque;
+  background-color: #272727;
+  background-image: url('Images/bg/bg2.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
 }
 
-header {
-
-    text-align: center;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-bottom: 2%;
-    box-shadow: 0px 4px 6px 6px #0D6EFD;
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* set opacity here */
 }
 
-#navbar {
-    padding-bottom: 1%;
+.nav-link{
+  color: #f5f5f5;
 }
 
-h2 {
-    text-align: center;
-    padding: 2%;
+
+.thumbnail-grid {
+  padding: 50px 0;
 }
 
-body {
-    background-color: black;
+/* Style the thumbnails */
+.thumbnail {
+  margin-bottom: 30px;
+  overflow: hidden;
 }
 
-#sobre_mi {
-    margin-bottom: 4%;
+.thumbnail img {
+  width: 70%;
+  height: auto;
+  transition: transform .2s;
 }
 
-#formacion {
-    background-image: url("Images/bg/bg_1.webp");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
+/* Add some padding to the text */
+.thumbnail .caption {
+  padding: 10px;
 }
 
-.iconos {
-    width: 10rem;
+/* Add some hover effects */
+.thumbnail:hover img {
+  transform: scale(1.1);
 }
 
-#yo {
-    border-radius: 50%;
-    margin-left: 5%;
-    width:20rem;
-    padding-left: 4%;
+.thumbnail:hover .caption {
+  background-color: #1a81d6;
 }
 
-footer{
-    box-shadow: 0px 4px 6px 6px #0D6EFD;
+
+.carousel-item {
+  height: 500px; /* Set a fixed height for the carousel items */
 }
-a{
-    color: bisque;
+
+.carousel-item img {
+  object-fit: cover; /* Ensure the image fills the entire container without being cropped */
+}
+
+.card-body {
+  height: 100%; /* Set a fixed height for all card bodies */
+}
+ul li a{
+color: #fff;
 }
